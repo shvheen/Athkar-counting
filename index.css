@@ -1,3 +1,63 @@
+@media screen and (max-width: 550px) {
+    body {
+        background-image: url("images.jpg");
+        background-size: cover;
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background: rgb(255, 255, 255, 0.5);
+        width: 85%;
+        height: 85%;
+        margin: auto;
+        border: 0px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #increment-btn {
+        background: #302ca0;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    #save-btn {
+        background: #2f8b5a;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        padding-top: 30;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 40;
+    }
+
+    #save-el {
+        font-weight: bold;
+    }
+}
+
 body {
     background-image: url("images.jpg");
     background-size: cover;
@@ -53,48 +113,4 @@ button {
 
 #save-el {
     font-weight: bold;
-}
-
-@media screen and (max-width: 550px) {
-    body {
-        background-image: url("images.jpg");
-        background-size: cover;
-        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-        text-align: center;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        background: rgb(255, 255, 255, 0.5);
-        width: 85%;
-        height: 85%;
-        margin: auto;
-        border: 0px solid black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #increment-btn {
-        background: #302ca0;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-    }
-
-    #save-btn {
-        background: #2f8b5a;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-    }
-
-    p {
-        margin-top: 40;
-    }
 }
