@@ -1,10 +1,9 @@
 body {
-<<<<<<< HEAD
     background-image: url("images.jpg");
     background-size: cover;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    height: auto;
+    height: 100hv;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,8 +58,6 @@ body {
 }
 
 /* body {
-=======
->>>>>>> parent of 3dff9a0 (adding viewport to html)
     background-image: url("images.jpg");
     background-size: cover;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
