@@ -54,3 +54,47 @@ button {
 #save-el {
     font-weight: bold;
 }
+
+@media screen and (max-width: 550px) {
+    body {
+        background-image: url("images.jpg");
+        background-size: cover;
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background: rgb(255, 255, 255, 0.5);
+        width: 85%;
+        height: 85%;
+        margin: auto;
+        border: 0px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #increment-btn {
+        background: #302ca0;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    #save-btn {
+        background: #2f8b5a;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    p {
+        margin-top: 40;
+    }
+}
