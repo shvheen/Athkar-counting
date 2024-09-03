@@ -1,16 +1,26 @@
 body {
-    background-image: url("images.jpg");
-    background-size: cover;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     height: 100vh;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     background: rgb(255, 255, 255, 0.5);
-    max-width: 80%;
+    min-width: 500px;
+    max-width: 800px;
     margin: auto;
-    border: 0px solid black;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+#count-el {
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    width: fit-content;
     border-radius: 10px;
 }
 
@@ -27,41 +37,88 @@ h2 {
 }
 
 p {
-    padding-top: 15;
-    padding-bottom: 30;
+    padding: 15px 20px;
     direction: rtl;
+    background-color: rgb(226, 226, 226);
+    min-width: 380px;
+    max-width: 80%;
+    border-radius: 10px;
+    text-align: right;
 }
 
 button {
-    border: 0px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    font-weight: bold;
     width: 200px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    outline-offset: 1px;
+    margin: 7px 0px;
+    cursor: pointer;
+}
+
+.btn-container {
+    align-self: center;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #increment-btn {
-    background: #302ca0;
+    order: 1;
+    background: #181650;
 }
 
 #save-btn {
-    background: #2f8b5a;
+    background: #1c5838;
 }
 
 #save-el {
     font-weight: bold;
 }
 
+span.co {
+    font-size: 30;
+    font-weight: bold;
+    display: block;
+    background: #302ca0;
+    padding: 12px 42px;
+    border-radius: 10px;
+    color: white;
+    transform: translateY(-6px);
+}
+
+span.sa {
+    font-size: 30;
+    font-weight: bold;
+    display: block;
+    background: #2f8b5a;
+    padding: 12px 42px;
+    border-radius: 10px;
+    color: white;
+    transform: translateY(-6px);
+}
+
+#increment-btn:hover span.co {
+    transform: translateY(-8px);
+}
+
+#save-btn:hover span.sa {
+    transform: translateY(-8px);
+}
+
+#increment-btn:active span.co {
+    transform: translateY(-2px);
+}
+
+#save-btn:active span.sa {
+    transform: translateY(-2px);
+}
+
 @media screen and (max-width: 550px) {
     body {
-        background-image: url("images.jpg");
-        background-size: cover;
         font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-        text-align: center;
-        height: 100vh;
+        /* text-align: center;
+        align-self: center; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -69,32 +126,71 @@ button {
 
     .container {
         background: rgb(255, 255, 255, 0.5);
-        width: 85%;
-        height: 85%;
-        margin: auto;
-        border: 0px solid black;
+        min-width: 80%;
+        max-width: 90%;
+        height: 90%;
         border-radius: 10px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+    }
+
+    .btn-container {
+        min-width: 300px;
+        align-self: center;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     #increment-btn {
-        background: #302ca0;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
+        order: 1;
     }
 
-    #save-btn {
-        background: #2f8b5a;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
+    button {
+        width: fit-content;
+        padding: 0;
+        border: none;
+        border-radius: 10px;
+        outline-offset: 1px;
+        margin: 7px 0px;
+        cursor: pointer;
     }
+
+    span.co {
+        font-size: 30;
+        font-weight: bold;
+        display: block;
+        background: #302ca0;
+        padding: 12px 30px;
+        border-radius: 10px;
+        color: white;
+        transform: translateY(-6px);
+    }
+
+    span.sa {
+        font-size: 30;
+        font-weight: bold;
+        display: block;
+        background: #2f8b5a;
+        padding: 12px 42px;
+        border-radius: 10px;
+        color: white;
+        transform: translateY(-6px);
+    }
+
+    /* #increment-btn {
+        background: #181650;
+        cursor: pointer;
+        outline-offset: 20px;
+    } */
+
+    /* #save-btn {
+        background: #2f8b5a;
+        cursor: pointer;
+    } */
 
     p {
         margin-top: 40;
+        min-width: 80%;
+        max-width: 80%;
     }
 }
